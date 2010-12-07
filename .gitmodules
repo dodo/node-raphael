@@ -10,3 +10,6 @@
 [submodule "deps/raphael"]
 	path = deps/raphael
 	url = https://github.com/DmitryBaranovskiy/raphael.git
+[submodule "deps/node-overload"]
+	path = deps/node-overload
+	url = https://github.com/bmeck/node-overload.git

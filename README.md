@@ -11,6 +11,8 @@ using the beatiful SVG library [Raphaël](http://raphaeljs.com) on [node.js](htt
     git clone https://github.com/dodo/node-raphael.git
     cd node-raphael
     git submodules update --init
+    cd deps/node-overload
+    make
 
 ## Motivation
 
@@ -23,6 +25,7 @@ srsly .. i want to generate some good looking charts without using javascript on
 * [raphael](https://github.com/DmitryBaranovskiy/raphael)
 * [g.raphael](https://github.com/DmitryBaranovskiy/g.raphael)
 * [vargs](https://github.com/cloudhead/vargs)
+* [node-overload](https://github.com/bmeck/node-overload)
 
 ## Usage
 
