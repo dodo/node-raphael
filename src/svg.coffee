@@ -6,7 +6,7 @@ class SVG
     constructor: () ->
         filename = require.resolve('../../node_modules/raphael/raphael')
         code = fs.readFileSync(filename)
-        @_script = vm.createScript(code, 'raphael.vm')
+        @_script = vm.createScript(code, filename)
 
     _raphael: (win, doc, nav) ->
         ctx =
