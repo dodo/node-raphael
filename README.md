@@ -18,7 +18,7 @@ srsly .. i want to generate some good looking charts without using javascript on
 ## Usage
 
     var raphael = require('node-raphael');
-    raphael.generate(width, height, function draw(paper) { … });
+    var svg = raphael.generate(width, height, function draw(paper) { … });
 
 ## Example
 
