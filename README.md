@@ -20,11 +20,15 @@ srsly .. i want to generate some good looking charts without using javascript on
     var raphael = require('node-raphael');
     var svg = raphael.generate(width, height, function draw(paper) { … });
 
+__WARNING__
+
+[jsdom](http://jsdom.org) just implements a DOM 1.0, which only covers SVG 1.0, but raphael uses SVG 1.1, so features like text may not work.
+
 ## Example
 
 SVG Server with [Raphaël Logo](http://raphaeljs.com/gear.html):
 
- * https://github.com/dodo/node-raphael/example/server.js
+ * https://github.com/dodo/node-raphael/blob/master/example/server.js
 
 ## TODO
 
