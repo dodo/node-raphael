@@ -9,6 +9,7 @@
     },
     "author": "dodo (https://github.com/dodo)",
     "main": "node-raphael.js",
+    "keywords": ["raphael", "svg"],
     "directories": {
         "lib": "./src",
         "examples": "./example"
