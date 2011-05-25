@@ -1,7 +1,7 @@
 {
     "name": "node-raphael",
     "description": "wrapper for raphael for usage in nodejs",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "homepage": "https://github.com/dodo/node-raphael",
     "repository": {
         "type": "git",
@@ -24,6 +24,6 @@
     "dependencies": {
         "jsdom": ">= 0.0.1",
         "raphael": ">= 1.4.7-14-gdbe241f",
-        "coffee-script": ">= 1.0.0"
+        "coffee-script": ">= 1.1.1"
     }
 }
