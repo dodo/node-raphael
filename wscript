@@ -1,15 +1,26 @@
+from os.path import dirname, abspath
+
 top = "."
 out = "build"
 
+class Dummy: pass
+
 
 def configure(ctx):
-    ctx.find_program("coffee", var="COFFEE")
+    ctx.find_program("coffee",
+        var="COFFEE",
+        path_list=[abspath('./node_modules/coffee-script/bin')])
+    print ctx.env.COFFEE
     ctx.env.ARGS = "-co"
 
 
 def build(ctx):
-    for file in ctx.glob("src/*.coffee"):
+    env = Dummy()
+    env.variant = lambda: ""
+    for file in ctx.path.find_dir("src").ant_glob("**/*.coffee", flat=False):
+        tgtpath = file.change_ext(".js").bldpath(env)[5:]
+        ctx.path.exclusive_build_node(tgtpath)
         ctx(name   = "coffee",
-            rule   = "${COFFEE} ${ARGS} default ${SRC}",
-            target = file[4:-6] + "js",
-            source = file)
+            rule   = "${COFFEE} ${ARGS} default/%s ${SRC}" % dirname(tgtpath),
+            source = file.srcpath()[3:],
+            target = tgtpath)
