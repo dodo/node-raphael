@@ -1,7 +1,7 @@
 {
     "name": "node-raphael",
     "description": "wrapper for raphael for usage in nodejs",
-    "version": "0.0.2-2",
+    "version": "0.1.0",
     "homepage": "https://github.com/dodo/node-raphael",
     "repository": {
         "type": "git",
@@ -18,8 +18,7 @@
         "node": "0.4.x"
     },
     "scripts": {
-        "preinstall": "node-waf configure",
-        "install": "node-waf build",
+        "install": "node-waf configure build",
         "update": "node-waf build"
     },
     "dependencies": {
