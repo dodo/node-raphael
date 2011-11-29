@@ -1,6 +1,6 @@
 # node-raphael
 
-using the beatiful SVG library [Raphaël](http://raphaeljs.com) on [node.js](http://nodejs.org/) to generate svg-data.
+using the beatiful SVG library [Raphaël](http://raphaeljs.com) in [node.js](http://nodejs.org/) to generate svg-data.
 
 ## Features
 
@@ -10,7 +10,9 @@ using the beatiful SVG library [Raphaël](http://raphaeljs.com) on [node.js](htt
 
 make sure you have `node-waf` installed (contained in `nodejs-dev` package).
 
-    npm install node-raphael
+```bash
+npm install node-raphael
+```
 
 ## Motivation
 
@@ -19,8 +21,10 @@ srsly .. i want to generate some good looking charts without using javascript on
 
 ## Usage
 
-    var raphael = require('node-raphael');
-    var svg = raphael.generate(width, height, function draw(paper) { … });
+```javascript
+var raphael = require('node-raphael');
+var svg = raphael.generate(width, height, function draw(paper) { … });
+```
 
 __WARNING__
 
