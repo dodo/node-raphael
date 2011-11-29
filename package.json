@@ -15,7 +15,7 @@
         "examples": "./example"
     },
     "engines": {
-        "node": "0.4.x"
+        "node": ">= 0.4.x"
     },
     "scripts": {
         "preinstall": "#preinstall DO NOTHING",
