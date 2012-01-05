@@ -18,13 +18,14 @@
         "node": ">= 0.4.x"
     },
     "scripts": {
-        "preinstall": "#preinstall DO NOTHING",
-        "install": "node-waf configure build",
-        "update": "node-waf build"
+        "pre-publish": "cake build"
     },
     "dependencies": {
         "jsdom": ">= 0.0.1",
-        "raphael": ">= 1.4.7-14-gdbe241f",
-        "coffee-script": ">= 1.1.1"
+        "raphael": ">= 1.4.7-14-gdbe241f"
+    },
+    "devDependencies": {
+        "coffee-script": ">= 1.2.0",
+        "muffin": ">= 0.2.6"
     }
 }

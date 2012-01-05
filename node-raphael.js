@@ -1,2 +1,2 @@
 
-module.exports = require('./build/default/svg')
+module.exports = require('./lib/svg')

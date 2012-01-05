@@ -1,5 +1,5 @@
 *~
 *.swp
 .lock-wscript
-build/*
+lib/*
 node_modules/*
