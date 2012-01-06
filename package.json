@@ -18,7 +18,7 @@
         "node": ">= 0.4.x"
     },
     "scripts": {
-        "pre-publish": "cake build"
+        "prepublish": "cake build"
     },
     "dependencies": {
         "jsdom": ">= 0.0.1",
