@@ -31,3 +31,5 @@ class SVG
 
 
 module.exports = new SVG()
+module.exports.SVG = SVG
+
