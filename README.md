@@ -8,8 +8,6 @@ using the beatiful SVG library [Raphaël](http://raphaeljs.com) in [node.js](htt
 
 ## Installation
 
-make sure you have `node-waf` installed (contained in `nodejs-dev` package).
-
 ```bash
 npm install node-raphael
 ```
