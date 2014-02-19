@@ -15,17 +15,17 @@
         "examples": "./example"
     },
     "engines": {
-        "node": ">= 0.4.x"
+        "node": ">= 0.8.x"
     },
     "scripts": {
         "prepublish": "cake build"
     },
     "dependencies": {
-        "jsdom": ">= 0.0.1",
-        "raphael": ">= 1.4.7-14-gdbe241f"
+        "jsdom": "~0.10.1",
+        "raphael": "~2.1.0"
     },
     "devDependencies": {
-        "coffee-script": ">= 1.2.0",
+        "coffee-script": ">= 1.7.1",
         "muffin": ">= 0.2.6"
     }
 }
