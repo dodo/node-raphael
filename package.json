@@ -8,7 +8,7 @@
         "url": "git://github.com/dodo/node-raphael.git"
     },
     "author": "dodo (https://github.com/dodo)",
-    "main": "node-raphael.js",
+    "main": "index.js",
     "keywords": ["raphael", "svg"],
     "directories": {
         "examples": "./example"

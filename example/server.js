@@ -1,5 +1,5 @@
 var http = require('http'),
-    raphael = require('node-raphael');
+    raphael = require('../');
 
 var server = http.createServer(function(req, res) {
     res.writeHead(200, {"Content-Type": "image/svg+xml"});
