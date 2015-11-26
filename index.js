@@ -4,11 +4,11 @@ var fs = require('fs')
 
 var script = loadRaphael()
 module.exports.generate = function generate(width, height, callback) {
-    var win = jsdom.createWindow(jsdom.dom)
-        , doc = jsdom.jsdom("<html><body></body></html>")
+    var doc = jsdom.jsdom("<html><body></body></html>")
+        , win = doc.defaultView;
     var nav = win.navigator
     win.document = doc
-    doc.implementation.addFeature(
+    doc.implementation._addFeature(
         "http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1")
     paper = extractRaphael(win, doc, nav)(0, 0, width || 42, height || 42)
     if (callback) callback(paper)

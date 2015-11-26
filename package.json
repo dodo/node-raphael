@@ -17,7 +17,7 @@
         "node": ">= 0.8.x"
     },
     "dependencies": {
-        "jsdom": "~0.10.1",
+        "jsdom": "^7.1.0",
         "raphael": "~2.1.0"
     }
 }
