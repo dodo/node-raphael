@@ -9,7 +9,10 @@
     },
     "author": "dodo (https://github.com/dodo)",
     "main": "index.js",
-    "keywords": ["raphael", "svg"],
+    "keywords": [
+        "raphael",
+        "svg"
+    ],
     "directories": {
         "examples": "./example"
     },
@@ -17,7 +20,7 @@
         "node": ">= 0.8.x"
     },
     "dependencies": {
-        "jsdom": "~0.10.1",
-        "raphael": "~2.1.0"
+        "jsdom": "^14.0.0",
+        "raphael": "^2.2.8"
     }
 }
