@@ -1,22 +1,23 @@
 var fs = require('fs')
-  , vm = require('vm')
-  , jsdom = require('jsdom')
+    ,vm = require('vm')
+    ,jsdom = require('jsdom')
 
-const { JSDOM } = jsdom;
-
-var script = loadRaphael()
+var script = loadRaphael();
 module.exports.generate = function generate(width, height, callback) {
-    var doc = new JSDOM('<html><body></body></html>')
-        win = doc.window
+    const JSDOM = jsdom.JSDOM;
+
+    var dom = new JSDOM("<html><body></body></html>");
+    var win = dom.window;
+    var doc = win.document;
+
     var nav = win.navigator
     win.document = doc
-
     // doc.implementation.addFeature(
     //     "http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1")
-    var paper = extractRaphael(win, win.document, nav)(0, 0, width || 42, height || 42)
-
-    if (callback) callback(paper, win.document, nav)
-    return win.document.body.firstChild && win.document.body.firstChild.outerHTML || ""
+    paper = extractRaphael(win, doc, nav)(0, 0, width || 42, height || 42)
+    if (callback) callback(paper)
+    
+    return doc.body.firstChild && doc.body.firstChild.outerHTML || "";
 }
 
 function loadRaphael() {

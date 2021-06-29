@@ -16,11 +16,8 @@
     "directories": {
         "examples": "./example"
     },
-    "engines": {
-        "node": ">= 0.8.x"
-    },
     "dependencies": {
-        "jsdom": "^14.0.0",
-        "raphael": "^2.2.8"
+        "jsdom": "^16.6.0",
+        "raphael": "^2.3.0"
     }
 }
